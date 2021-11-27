@@ -47,4 +47,7 @@ console.log(Math.round(num));
 //* Перевод в 10ную систему исчисления
 
 let testNum = "12.23px"
+//* без плавающей точки
+console.log(parseInt(testNum))
+//* с плавающей точкой
 console.log(parseFloat(testNum))
