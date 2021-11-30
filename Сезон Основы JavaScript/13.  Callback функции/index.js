@@ -28,3 +28,15 @@ function showMsg(name, status, callback) {
 showMsg('Islam', 'Admin', () => {
   console.log('Message is not supported!');
 });
+
+//* Чаще всего  callback функции используются для обработчиков событий
+//* например:
+
+const sayHello = () => {
+  console.log('Hello');
+};
+
+//*Поиск по селектору
+let clickButton = document.querySelector('#clickButton');
+//* обработчик событий и  callback функция
+clickButton.addEventListener('click', sayHello);
