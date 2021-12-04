@@ -1,6 +1,6 @@
 'use strict';
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // console.log(arr);
 
@@ -56,4 +56,23 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // console.log(newFilterArr);
 // console.log(arr);
 
-//*
+//*str.split() - можно использовать как для создания массива через prompt
+//   const str = prompt("")
+//   const product = str.split(", ")
+
+// console.log("Products : ", product)
+
+//*str.join() - Из массива в строку разделенной указанным символом
+// const str = arr.join(', ');
+// console.log(str)
+//* метод .sort() это сортировка массива методом быстрой сортировки
+
+const arr = [122, 22, 3, 41, 51, 6, 7, 8, 9];
+
+arr.sort(compareNum);
+
+console.log(arr);
+//* без этой функции не работает метод .sort()
+function compareNum(a, b) {
+  return a - b;
+}
